@@ -1,0 +1,486 @@
+/*Table of Contents
+_______________________________________________
+- General Content
+- Typography
+- Header and Nav
+- Images & Media
+- Footer
+- Media Queires
+_______________________________________________*/
+
+/* Custom Fonts
+_______________________________________________*/
+@font-face {
+    font-family: 'mario';
+    src: url('../fonts/mario.ttf');
+}
+
+@font-face {
+    font-family: 'mario_bros';
+    src: url('../fonts/mario_bros.ttf');
+}
+
+/* General Content
+_______________________________________________*/
+
+.main {
+    padding-top: 3%;
+    margin-top: 17%;
+}
+
+.intro {
+    text-align: center;
+    border: solid 5px #ad0000;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.intro a {
+    color: #cc0000;
+    font-weight: bold;
+    transition: 200ms ease;
+}
+
+.intro a:hover {
+    font-size: 1.8em;
+    -webkit-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+
+}
+
+.intro h2 {
+    background: rgba(204,0,0,1);
+    background: -moz-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(204,0,0,1)), color-stop(100%, rgba(173,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+    color: #fff;
+    width: 101.1%;
+    margin-left: -.5%;
+    margin-top: -3.5%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.row {
+    padding: 2% 0;
+}
+
+.red {
+    background-color: #cc0000;
+}
+
+.site {
+    width: 100%;
+    display: block;
+    vertical-align: top;
+    background-color: #cc0000;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -7px;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+
+}
+/* Typography
+_______________________________________________*/
+
+body {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
+    background: url('../images/background.png');
+}
+
+h2 {
+    font-family: 'mario_bros', cursive;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+    color: #fff;
+    margin: 0.67em;
+}
+
+h2.bio {
+    color: #fff;
+}
+
+p.bio {
+    color: #fff;
+}
+
+/* Header and Nav
+_______________________________________________*/
+header.main_nav {
+    padding: 0;
+    display: block;
+    position: fixed;
+    width: 100%;
+    margin-top: -17%;
+    z-index: 500;
+    box-shadow: 2px 2px 7px rgba(0,0,0, 0.75);
+}
+
+.mfp-zoom-out-cur {
+    z-index: 9999;
+}
+
+.logo {
+    margin: 1% auto;
+    text-align: center;
+}
+
+.logo p {
+    color: #fff;
+    margin: 1%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo a {
+    font-size: 5em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'mario';
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    box-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    padding: 2px 25px 10px 25px;
+    margin: 0;
+    border: solid 3px #fff;
+    border-radius: 50px;
+    transition: .5s ease;
+}
+
+.logo a:hover {
+    background-color: #fff;
+    color: #cc0000;
+    transition: .5s ease;
+}
+
+/* Images & Media
+_______________________________________________*/
+img {
+    max-width: 100%;
+}
+
+img.avatar {
+    border-radius: 100%;
+    border: 5px #fff solid;
+    width: 90%;
+    transition: all 200ms ease;
+}
+
+img.avatar:hover {
+    position: static;
+    border: 15px #fff solid;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    transition: all 200ms ease;
+}
+
+.portfolio img {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.portfolio {
+    border-bottom-left-radius: .6em;
+    border-bottom-right-radius: .6em;
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+a.image-link {
+    position: relative;
+    width: 100%;
+    text-decoration: none !important;
+    text-align: center;
+
+  }
+  a.image-link:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: -2.5em;
+    width: inherit;
+    background: rgba(0,0,0,0.75);
+    text-decoration: none !important;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+  }
+  a.image-link:hover:after, a.image-link:focus:after {
+    opacity: 1.0;
+    margin-bottom: 3px;
+  }
+
+/* Footer
+_______________________________________________*/
+
+footer {
+    background-color: #fff;
+}
+
+ul.social {
+    display: block;
+    margin:5% 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.social li {
+    font-size: 3em;
+    display: inline;
+    padding: 0 2%;
+}
+
+ul.social li a {
+    color: #666;
+}
+
+ul.social li.facebook a:hover {
+    color: rgb(59,89,152);
+}
+
+ul.social li.twitter a:hover {
+    color: rgb(0,172,237);
+}
+
+ul.social li.instagram a:hover {
+    color: rgb(81,127,237);
+}
+
+ul.social li.youtube a:hover {
+    color: rgb(187,0,0);
+}
+
+ul.social li.flickr a:hover {
+    color: rgb(255,0,132);
+}
+
+ul.social li.linkedin a:hover {
+    color: rgb(0,123,182);
+}
+
+p.copyright {
+    text-align: center;
+    color: #666;
+    font-size: 1em;
+    margin-top: 1.2em;
+    margin-bottom: -.35em;
+}
+
+.link_lists {
+    line-height: 1em;
+    list-style-type: none;
+}
+
+.list_title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.link_lists a {
+    text-decoration: none;
+    color: #333;
+}
+
+.link_lists a:hover {
+    color: #ff6633;
+    font-weight: bold;
+}
+
+/* Media Queries
+_______________________________________________*/
+@media (max-width: 1000px) {
+
+    .main {
+        padding-top: 3%;
+        margin-top: 19%;
+    }
+
+    header.main_nav {
+        margin-top: -19%;
+    }
+
+    .logo a {
+        font-size: 4em;
+
+    }
+
+    .intro h2 {
+        width: 101.4%;
+        margin-left: -.7%;
+        margin-top: -3.5%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .main {
+        padding-top: 3%;
+        margin-top: 20%;
+    }
+
+    .logo a {
+        font-size: 3em;
+    }
+
+    .logo p {
+        font-size: 1.2em;
+        margin-top: 2%;
+    }
+
+    header.main_nav {
+        margin-top: -20%;
+    }
+
+    img.avatar {
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    img.avatar {
+        border-radius: 100%;
+        border: 5px #fff solid;
+        margin-bottom: -10px;
+        transition: 300ms;
+    }
+
+    img.avatar:hover {
+        margin-top: 10%;
+        transition: none;
+        border: 5px white solid;
+        margin-left: 0;
+    }
+
+    .social {
+        font-size: .65em;
+    }
+
+    .intro h2 {
+        width: 101.5%;
+        margin-left: -.8%;
+        margin-top: -3.5%;
+    }
+
+    p.copyright {
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo a {
+        font-size: 1.9em;
+    }
+
+    .logo p{
+        font-size: 1em;
+        padding-top: 1%;
+    }
+
+    .main {
+        padding-top: 3%;
+        margin-top: 26%;
+    }
+
+    header.main_nav {
+        margin-top: -26%;
+    }
+
+    .row2 {
+        margin-top: 5%;
+    }
+
+    .portfolio {
+        margin-bottom: 10%;
+    }
+
+    .red {
+        text-align: center;
+    }
+
+    .site {
+        font-size: 1.5em;
+    }
+    .row {
+        padding: 0;
+    }
+
+    .link_lists a {
+        font-size: 1.2em;
+    }
+
+    .intro h2 {
+        width: 102.4%;
+        margin-left: -1.2%;
+        margin-top: -3.5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        padding-top: 3%;
+        margin-top: 22%;
+    }
+
+    header.main_nav {
+        margin-top: -22%;
+    }
+
+    .logo a {
+        font-size: 1.6em;
+    }
+
+    .logo p {
+        margin-top: 3%;
+    }
+
+    .main {
+        padding-top: 11%;
+    }
+
+    .portfolio {
+        margin-bottom: 10%;
+    }
+
+    .red {
+        text-align: center;
+    }
+
+    h2.bio {
+        font-size: 2.5em;
+    }
+
+    p.bio {
+        font-size: 1.25em;
+    }
+
+    .intro h2 {
+        width: 103.6%;
+        margin-left: -1.8%;
+        margin-top: -3.5%;
+    }
+}
